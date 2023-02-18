@@ -1,0 +1,14 @@
+<!-- <app-wise-bar></app-wise-bar> -->
+
+<div class="px-8 pt-24 mx-auto max-w-7xl">
+	<input type="text" [formControl]="controller" class="block w-full max-w-sm py-1 mb-2 rounded-md bg-zinc-800 text-zinc-50">
+	<button (click)="scrape()" class="rounded-md bg-indigo-600 text-zinc-50 hover:bg-indigo-500 transition-all duration-300 px-2 py-0.5 text-base">Scrape Links</button>
+</div>
+<div class="px-8 mx-auto mt-12 max-w-7xl">
+	<ul>
+		<li *ngFor="let item of links" class="flex items-center w-full px-2 py-2 border-b border-zinc-600">
+			<input type="checkbox" [name]="item.name" class="mr-3 rounded-md">
+			<a [href]="item.href" target="_blank" rel="noopener noreferrer" class="transition-all duration-300 cursor-pointer text-zinc-300 hover:text-indigo-400">{{item.name}}</a>
+		</li>
+	</ul>
+</div>

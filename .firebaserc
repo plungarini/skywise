@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "skywise-mc": {
+      "hosting": {
+        "skywise": [
+          "skywise-mc"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "skywise-mc"
+  }
+}
